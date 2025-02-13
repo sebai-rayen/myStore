@@ -1,0 +1,103 @@
+
+
+<br>
+<br><br>
+
+<h4  class="focus-in-contract-bck"   style="font-family: serif; text-align: center; font-size: 50px; "> My Product</h4>
+<br><br>
+
+<div class="body" style="margin-left: 80px; margin-right: 80px">
+  <div class="row">
+    <ng-container *ngFor="let item of dataarry">
+      <div class="col col-12 col-md-6 col-lg-3" *ngIf="Uid === item.Uid">
+        <div class="card " style="margin-top: 30px;">
+          <img [src]="item.image || 'default-image-url.jpg'" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h1 class="card-title">{{ item.title }}</h1>
+            <p class="card-text">{{ item.text }}</p>
+
+            <div class="card-btn text-center">
+              <button type="button" class="button" (click)="delete(item.id)"> Close </button>&nbsp;&nbsp;
+              <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="openUpdateModal(item)">update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="nom" id="exampleModalLabel">Update :</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-container">
+              <p>Image  :</p>
+              <input type="text" [(ngModel)]="selectedProduct.image"   class="form-control" placeholder="Enter image">
+             
+
+              <p>Title  :</p>
+              <input type="text"[(ngModel)]="selectedProduct.title" class="form-control" placeholder="Enter Title">
+             
+
+              <p>Text  :</p>
+              
+              <textarea type="text"[(ngModel)]="selectedProduct.text"  class="form-control" placeholder="Enter Text"></textarea>
+              
+
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="button1"(click)="updateProduct()" >changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+   

@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="form-box">
+        <form class="form">
+            <span class="title">Sign up</span>
+          
+            <span class="subtitle">Create a free account with your email.</span>
+            <form #f="ngForm" (ngSubmit)="register(f)">
+            <div class="form-container">
+              
+              <input type="text" class="input form-control" name="flname" placeholder="Full Name" ngModel required #flname="ngModel">
+              <p class="alert alert-danger" *ngIf="flname.errors?.['required'] && flname.touched">This firstname is required</p>
+              
+              <input type="email" class="input form-control" name="mail" placeholder="Email" ngModel required #mail="ngModel">
+              <p class="alert alert-danger" *ngIf="mail.errors?.['required'] && mail.touched">This email is required</p>
+              
+              <input type="password" class="input" placeholder="Password" name="pass"  ngModel required #pass="ngModel" minlength="8">
+              <p class="alert alert-danger" *ngIf="pass.errors?.['required'] && pass.touched">This password is required</p>
+            
+             
+            </div>
+            <br>
+            <button type="submit"  >
+            Sign up 
+            </button>
+        </form>
+        <div class="form-section">
+          <p>Have an account? <a href="">Log in</a> </p>
+        </div>
+     </form>   </div>
+</div>
+

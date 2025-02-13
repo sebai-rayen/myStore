@@ -1,0 +1,28 @@
+<br>
+<br>
+
+
+
+<form class="form" >
+    <p class="form-title">Sign in to your account</p>
+    
+    <form #f="ngForm" (ngSubmit)="login(f)">
+     <div class="input-container">
+       <input type="email" name="email" placeholder="Enter email" ngModel required #email="ngModel">
+       <p class="alert alert-danger" *ngIf="email.errors?.['required'] && email.touched">This email is required</p>
+
+       <span>
+       </span>
+   </div>
+   <div class="input-container">
+       <input type="password" name="password" class="input" placeholder="Enter password" ngModel required #password="ngModel" minlength="8">
+       <p class="alert alert-danger" *ngIf="password.errors?.['required'] && password.touched">This password is required</p></div>
+      <button type="submit" class="submit">
+     Sign in</button>
+     <div class="alert alert-danger" *ngIf="messgerr">{{messgerr}}</div>
+   <p class="signup-link">
+     No account?
+     <a href="">Sign up</a>
+   </p>
+  </form>
+</form>

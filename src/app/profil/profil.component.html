@@ -1,0 +1,48 @@
+<br>
+
+<br><br>
+<div class="container">
+
+    <article class="uk-comment uk-comment-primary" >
+    <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar" [src]="dataarry.image || 'default-image-url.jpg'" width="200" height="200" alt="">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{dataarry.flname}}</a></h4>
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{dataarry.mail}}</a></h4>
+                <br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update</button>
+            </div>
+        </div>
+    </header>
+    <div class="uk-comment-body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <input type="text" name="flname"class="form-control" [(ngModel)]="dataarry.flname">
+                <input type="text" name="mail"class="form-control" [(ngModel)]="dataarry.mail">
+                <input type="text" name="image"class="form-control" [(ngModel)]="dataarry.image">
+            
+            </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</article></div >

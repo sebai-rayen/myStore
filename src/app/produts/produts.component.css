@@ -1,0 +1,165 @@
+
+.focus-in-contract-bck{-webkit-animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both
+
+}
+.focus-in-contract-bck:hover {
+    letter-spacing: 3px;
+   
+  }
+  
+  .focus-in-contract-bck:active {
+    letter-spacing: 5px;
+  
+  
+  
+  
+  
+  }
+  
+
+
+
+@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}  
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.tt {
+  
+    padding: 15px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(53, 11, 245);
+    box-shadow: rgba(11, 50, 205, 0.05) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .tt:hover {
+    letter-spacing: 3px;
+    background-color: hsl(270, 33%, 2%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+ .tt:active {
+    letter-spacing: 3px;
+    background-color: hsl(231, 92%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(24, 4, 244) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+
+
+.card {
+   max-height:500px ;
+   min-height: 500px;
+   max-width: 300px;
+   min-width: 300px;
+   -webkit-animation:shadow-drop-2-center .9s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both
+  }
+  @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}  .card-body {
+    flex-grow: 1; /* Permet au texte de s'adapter sans déformer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-img-top {
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+   
+  }
+
+
+  .card-title{
+ 
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+  }
+
+
+
+  .card-text {
+    padding-top: 5px;
+    width: 270px;
+    height: 120px;
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+    
+    /* Modern scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
+  /* For Webkit browsers (Chrome, Edge, Safari) */
+  .card-text::-webkit-scrollbar {
+    width: 4px; /* Adjust scrollbar width */
+  }
+  
+  .card-text::-webkit-scrollbar-track {
+    background: #f5f2f2;
+    border-radius: 10px;
+  }
+  
+  .card-text::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .card-text::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+/* From Uiverse.io by felipesntr */ 
+
+
+.button {
+
+    width: 270px; /* Largeur fixe */
+    height: 45px; /* Hauteur fixe */
+    font-size: 16px;
+
+    border: 2px solid #1d03de;
+    background-color: #041dff;
+    border-radius: 0.9em;
+    cursor: pointer;
+    padding: 0.8em 1.2em ;
+    transition: all ease-in-out 0.2s;
+ 
+    font-weight: 600;
+    color: #fff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .button:hover {
+    background-color: #1e2fc9;
+    border-color: #0f1ca8;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  
