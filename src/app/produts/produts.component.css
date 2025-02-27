@@ -161,5 +161,119 @@
     transform: scale(0.95);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
+/* model taitel*/
+.modal-content{
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.modal-header{
+  background-color: #0e0e0e;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+.btn-close:hover{ 
+  background-color:red;
+  font-size: 20px;
+border-radius: 50%
+ 
+}
+
+.taitel{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: #fff;
+  font-family:none;
+}
+
+
+
+  .form-label{
+    font-family:none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    }
+  
+    .form-control {
+      border: 1px solid black;
+      outline: none;
+      padding: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .form-control:hover {
+      border-color: gray;
+      box-shadow: 0 0 5px gray;
+    }
+    
+    .form-control:focus {
+      border-color: black;
+      outline: 2px solid gray;
+      box-shadow: 0 0 8px gray;
+    }
+ 
+  
+
+
 
   
+
+
+
+
+
+
+  .button1{
+
+    width: 140px; /* Largeur fixe */
+    height: 41px; /* Hauteur fixe */
+    font-size: 16px;
+    color: #0a0a0a;
+  
+    border: 2px solid #686868;
+    background-color: #9b9b9e;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+
+  .button1:hover{
+    background-color: rgb(227, 3, 3);
+    border-color: rgb(201, 5, 5);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .button1:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+  
+  }
+  .btn{
+    width: 140px; /* Largeur fixe */
+    height: 41px; /* Hauteur fixe */
+    font-size: 16px;
+    color: #f1f1f1;
+  
+    border: 2px solid #320bdf;
+    background-color: #1313cf;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: #041dff;
+    border-color: #0f1ca8;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+  }
+  .btn:active{
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
